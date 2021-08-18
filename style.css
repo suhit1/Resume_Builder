@@ -1,0 +1,37 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.user_details {
+  text-align: center;
+}
+
+#add_entry_qualification,
+#add_entry_projects,
+#submit {
+  margin-top: 10px;
+  width: 100px;
+  height: 50px;
+}
+
+.projects_main {
+  display: flex;
+  justify-content: space-around;
+}
+
+#title,
+#discription,
+#skills {
+  width: 400px;
+}
+
+.appenddiv {
+  display: flex;
+  border: 1px solid lightslategray;
+}
+
+#dynamic {
+  border-left: 1px solid grey;
+}

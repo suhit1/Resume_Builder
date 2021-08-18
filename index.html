@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <h1 class="user_details">User Details</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+        <label for="email">E-mail:</label>
+        <input type="text" id="email" />
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" />
+        <p id="Qualification">Qualification:</p>
+        <div id="Qualification_div"></div>
+        <input type="text" placeholder="Qualification" id="qualification" />
+        <input type="text" placeholder="Stream" id="stream" />
+        <input type="text" placeholder="Admission year" id="admission" />
+        <input type="text" placeholder="Passout Year" id="passout" />
+        <button class="btn btn-primary" id="add_entry_qualification">
+          Add entry
+        </button>
+        <p id="project">Projects:</p>
+        <div id="projects_div"></div>
+        <div class="projects_main">
+          <input placeholder="Title" type="text" id="title" />
+          <textarea id="discription" placeholder="Discription"></textarea>
+          <textarea id="skills" placeholder="skills"></textarea>
+        </div>
+        <button class="btn btn-primary" id="add_entry_projects">
+          Add entry
+        </button>
+        <button class="btn btn-success" id="submit">Submit</button>
+      </div>
+      <div style="display: none" id="dynamic">
+        <p>Hi I'm</p>
+        <h1 id="fill_name">suhit</h1>
+        <h2 id="projects">Project(s):</h2>
+        <ul id="projects_list"></ul>
+        <h2 id="Qualifications">Qualification(s):</h2>
+        <ul id="qualification_list"></ul>
+        <h1 id="cntacts">Contact:</h1>
+        <a href="" id="mail">ffjfjjf@gmail.com</a>
+        <h4>Phone:<span id="telephone">89898989898</span></h4>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
